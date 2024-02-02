@@ -10,6 +10,7 @@ function AddExpenseForm() {
     const addExpense = (e) => {
         e.preventDefault();
         alert(`Category: ${formData.category}, Description: ${formData.description}, Amount: ${formData.amount}`)
+        setFormData({category:"",description:"",amount:""})
     }
     return (
         <Card>
